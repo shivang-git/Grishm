@@ -26,7 +26,7 @@ app.get('/about', (req, res) => {
 
 
 app.get('*', (req, res) => {
-    res.render("404")
+    res.status(404).render("404")
 })
 
 app.listen(port, () => {
